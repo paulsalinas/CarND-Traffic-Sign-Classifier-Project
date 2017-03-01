@@ -170,7 +170,7 @@ Here are the results of the prediction:
 | Stop		        	| Stop      			                		|
 
 
-The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. 
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This result fails to compare with the test results (~94% accuracy). I discuss the results of specific failed examples in the next question below but I suspect that this is a result of overfitting and the lack of training data for those classifications relative to other classifications. To address this, my next step would be to have more even distribution in the training data by adding augemented data via scaling, translating and rotating existing training data. To address the overfitting issue, I would add additional dropout in between layers.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
